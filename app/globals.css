@@ -15,17 +15,39 @@ body {
   color: var(--text);
 }
 
+.site {
+  background: var(--background);
+  color: var(--text);
+}
+
+/* hero styles */
 .hero {
-  min-height: 90vh;
+  min-height: auto;
   display: grid;
-  place-items: center;
+  justify-items: center;
+  align-content: start;
   text-align: center;
-  padding: 6rem 1.5rem;
+  padding-top: clamp(3rem, calc(8vw + 4vh), 18rem);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.25rem;
+  --title-size: clamp(3.5rem, 10vw, 8rem);
+}
+
+.heroFrame {
+  position: relative;
+  display: inline-grid;
+  justify-items: center;
 }
 
 .heroStack {
   display: grid;
   justify-items: center;
+
+}
+
+.heroSpacer {
+  height: clamp(2rem, calc(12vw + 6vh), 22rem);
 }
 
 .title {
@@ -37,10 +59,35 @@ body {
   font-family: "Mea Culpa", cursive;
 }
 
-.subtitle {
-  margin-left: 50px;
+.pretitle {
+  margin: 0 0 0.25rem;
+  justify-self: start;
+  width: fit-content;
   font-weight: 300;
   letter-spacing: -0.05em;
   font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif;;
-  font-size: clamp(0.95rem, 1.8vw, 1.6rem);
+  font-size: clamp(0.5rem, 1.3vw, 1.1rem);
+}
+
+.subtitle {
+  margin: 0.5rem 0 0;
+  justify-self: end;
+  font-weight: 300;
+  letter-spacing: -0.05em;
+  font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif;;
+  font-size: clamp(0.5rem, 1.3vw, 1.1rem);
+}
+
+/* about styles */
+.about {
+  padding: 2rem 1.5rem 6rem;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+}
+.aboutTitle {
+  margin: 0;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  font-size: clamp(1.25rem, 2vw, 2rem);
 }
