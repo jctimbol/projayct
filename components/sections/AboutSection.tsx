@@ -5,8 +5,13 @@ export default function AboutSection() {
         <div className="aboutLeft">
           <h2 className="aboutTitle">about me</h2>
           <p className="aboutText">
-            hello lalalalala sample text lalalalala i love coding
-            lalalalalalalalala i hate css lalalalala
+            hello! im jay, a software engineering student at san jose state
+            university! i'm currently into full-stack web dev, but i'm also
+            looking into distributed systems and networking. i also used to be
+            into game dev, but have since pivoted (it's rough out there)
+            <br /> <br />
+            outside of coding, i'm a huuuuge music nerd and i love taking (not
+            very good) pictures of my life!
           </p>
         </div>
 
