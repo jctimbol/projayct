@@ -16,7 +16,10 @@ export default function AboutSection() {
         </div>
 
         <div className="aboutRight">
-          <img src="/stickers/nonclickable/matcha.png"></img>
+          <img
+            className="photoStrip"
+            src="/stickers/nonclickable/PhotoCollage.png"
+          ></img>
         </div>
       </div>
     </section>
