@@ -22,11 +22,11 @@ body {
 
 /* hero styles */
 .hero {
-  min-height: auto;
   display: grid;
   justify-items: center;
   align-content: start;
   text-align: center;
+
   padding-top: clamp(3rem, calc(8vw + 4vh), 18rem);
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -92,7 +92,7 @@ body {
   gap: clamp(1.5rem, 4vw, 4rem);
   align-items: start;
 }
-.aboutTitle {
+.aboutTitle, .projectTitle {
   margin: 0;
   font-family: "DM Sans", system-ui, sans-serif;
   font-weight: 800;
@@ -109,4 +109,22 @@ body {
   transform:  scale(1.3) translateY(-13%);
   padding-left: 4rem;
   justify-self: top center;
+  filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.3));
+}
+
+/* project styles */
+.project {
+  background: var(--text);
+  color: var(--background);
+}
+.projectTitle {
+  padding: 3rem;
+}
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2.5vw, 1.75rem);
+}
+.projectCard {
+ 
 }
