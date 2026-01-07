@@ -56,7 +56,8 @@ body {
   letter-spacing: -0.10em;
   line-height: 0.9;
   font-size: clamp(3.5rem, 10vw, 8rem);
-  font-family: "Mea Culpa", cursive;
+  font-family: "Apple Chancery", "Lucida Calligraphy", cursive, sans-serif;
+
 }
 
 .pretitle {
@@ -126,5 +127,6 @@ body {
   gap: clamp(1rem, 2.5vw, 1.75rem);
 }
 .projectCard {
- 
+  justify-self: center;
+  padding: 10rem;
 }

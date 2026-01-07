@@ -3,10 +3,18 @@ export default function ProjectSection() {
     <section className="project">
       <div className="projectTitle">recent projects</div>
       <div className="projectGrid">
-        <div className="projectCard">seene</div>
-        <div className="projectCard">transit chatbot</div>
-        <div className="projectCard">ddd</div>
-        <div className="projectCard">hello stranger</div>
+        <div className="projectCard">
+          <img src="../../stickers/nonclickable/SeeneLogo.png"></img>
+        </div>
+        <div className="projectCard">
+          <img src="../../stickers/nonclickable/TransitLogo.png"></img>
+        </div>
+        <div className="projectCard">
+          <img src="../../stickers/nonclickable/DDDLogo.png"></img>
+        </div>
+        <div className="projectCard">
+          <img src="../../stickers/nonclickable/HelloStrangerLogo.png"></img>
+        </div>
       </div>
     </section>
   );
