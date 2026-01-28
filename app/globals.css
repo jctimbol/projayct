@@ -122,11 +122,27 @@ body {
   padding: 3rem;
 }
 .projectGrid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(1rem, 2.5vw, 1.75rem);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 1.5rem 3rem;
+  width: 100%;
 }
 .projectCard {
-  justify-self: center;
-  padding: 10rem;
+  display: flex;
+  justify-content: center;
+}
+.projectCard:nth-child(odd) {
+  align-self: flex-start;
+  margin-left: calc(25% - 45px);
+}
+.projectCard:nth-child(even) {
+  align-self: flex-end;
+  margin-right: calc(25% - 45px);
+}
+.projectIcon {
+  height: auto;
+  display: block;
+  width: clamp(90px, 18vw, 200px);
+  min-width: 90px;
 }
