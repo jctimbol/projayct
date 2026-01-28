@@ -89,21 +89,26 @@ body {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 0.8fr 1.25fr;
+  grid-template-columns: 1fr;
   gap: clamp(1.5rem, 4vw, 4rem);
   align-items: start;
+}
+@media (min-width: 768px) {
+  .aboutGrid {
+    grid-template-columns: 0.8fr 1.25fr;
+  }
 }
 .aboutTitle, .projectTitle {
   margin: 0;
   font-family: "DM Sans", system-ui, sans-serif;
   font-weight: 800;
   letter-spacing: -0.04em;
-  font-size: clamp(0.5rem, 3.2vw, 2.6rem);
+  font-size: clamp(1.2rem, 3.2vw, 2.6rem);
   text-align: center;
 }
 .aboutText {
   text-align: justify;
-  font-size: clamp(0.75rem, 1.25vw, 1.25rem);
+  font-size: clamp(0.85rem, 1.25vw, 1.25rem);
   letter-spacing: -0.05em;
 }
 .photoStrip {
@@ -111,6 +116,14 @@ body {
   padding-left: 4rem;
   justify-self: top center;
   filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.3));
+}
+@media (max-width: 767px) {
+  .photoStrip {
+    transform: scale(1);
+    padding-left: 0;
+    justify-self: center;
+    margin-bottom: 2rem;
+  }
 }
 
 /* project styles */
@@ -131,6 +144,8 @@ body {
 .projectCard {
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 300px;
 }
 .projectCard:nth-child(odd) {
   align-self: flex-start;
@@ -143,6 +158,9 @@ body {
 .projectIcon {
   height: auto;
   display: block;
-  width: clamp(90px, 18vw, 200px);
-  min-width: 90px;
+  width: 150px;
+}
+.projectIcon.dddLogo {
+  width: 120px;
+  height: 150px;
 }

@@ -17,7 +17,7 @@ export default function ProjectSection() {
         </div>
         <div className="projectCard">
           <img
-            className="projectIcon"
+            className="projectIcon dddLogo"
             width="150"
             height="250"
             src="../../stickers/nonclickable/DDDLogo.png"
